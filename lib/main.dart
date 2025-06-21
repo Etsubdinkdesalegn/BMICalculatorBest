@@ -20,6 +20,7 @@ class BMICalculator extends StatelessWidget {
           secondary: Color.fromARGB(255, 215, 1, 253),
         ),
       ),
+      debugShowCheckedModeBanner: false,
 
       home: InputPage(),
     );
