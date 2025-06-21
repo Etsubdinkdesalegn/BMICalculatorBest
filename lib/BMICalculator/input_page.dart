@@ -29,7 +29,11 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('BMI CALCULATOR')),
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 2, 238, 10),
+        title: Text('BMI CALCULATOR', style: TextStyle(color: Colors.black)),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -48,7 +52,7 @@ class _InputPageState extends State<InputPage> {
                             ? kActiveCardColor
                             : kInActiveCardColor,
                     cardChild: IconContent(
-                      icon: FontAwesomeIcons.mars,
+                      icon: FontAwesomeIcons.male,
                       label: 'MALE',
                     ),
                   ),
@@ -65,7 +69,7 @@ class _InputPageState extends State<InputPage> {
                             ? kActiveCardColor
                             : kInActiveCardColor,
                     cardChild: IconContent(
-                      icon: FontAwesomeIcons.venus,
+                      icon: FontAwesomeIcons.female,
                       label: 'FEMALE',
                     ),
                   ),
@@ -96,11 +100,19 @@ class _InputPageState extends State<InputPage> {
                   ),
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
-                      activeTrackColor: Colors.white,
-                      inactiveTrackColor: Color(0xff8d8e98),
-                      thumbColor: Color(0xffeb1555), // Ensure this is defined
-                      overlayColor: Color(
-                        0x29eb1555,
+                      activeTrackColor: const Color.fromARGB(255, 3, 246, 193),
+                      inactiveTrackColor: Color.fromARGB(255, 46, 49, 87),
+                      thumbColor: Color.fromARGB(
+                        255,
+                        245,
+                        5,
+                        149,
+                      ), // Ensure this is defined
+                      overlayColor: Color.fromARGB(
+                        41,
+                        146,
+                        5,
+                        233,
                       ), // Semi-transparent overlay when dragging
                       trackHeight: 2.0, // Adjust thickness of the slider
                       thumbShape: RoundSliderThumbShape(

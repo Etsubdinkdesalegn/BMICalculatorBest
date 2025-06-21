@@ -13,7 +13,7 @@ class IconContent extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(icon, size: 55.0),
+        Icon(icon, size: 55.0, color: Colors.yellowAccent),
         SizedBox(height: 7),
         Text(label, style: kLabelTextStyle),
       ],
